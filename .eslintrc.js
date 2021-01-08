@@ -51,6 +51,7 @@ module.exports = {
     // configure
     'prettier/prettier': 0,
     "@typescript-eslint/explicit-module-boundary-types":"off",
-    '@typescript-eslint/no-unused-vars':"error"
+    '@typescript-eslint/no-unused-vars':"error",
+    "no-console": ["error", { allow: ["warn", "error"] }]
   },
 };
