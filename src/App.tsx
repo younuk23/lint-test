@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const valeu = 'Val';
-
+  console.warn(valeu);
   return (
     <div className='App'>
       <header className='App-header'>
