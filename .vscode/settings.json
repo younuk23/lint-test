@@ -12,7 +12,6 @@
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "yarn",
-  "eslint.quiet": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }

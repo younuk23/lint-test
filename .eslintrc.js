@@ -23,7 +23,7 @@ module.exports = {
       arrowFunctions: true,
     },
   },
-  plugins: ['react', '@typescript-eslint', 'prettier', 'spellcheck'],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   settings: {
     react: {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
@@ -50,25 +50,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     // configure
     'prettier/prettier': 0,
-    '@typescript-eslint/no-unused-vars': 'error', // 사용안하는 변수
-    'no-console': ['error', { allow: ['warn', 'error'] }], // 노콘솔, console.warn, error는 허용
-    'spellcheck/spell-checker': [
-      1,
-      {
-        comments: false,
-        strings: true,
-        identifiers: false,
-        lang: 'en_US',
-        skipWords: ['dict', 'aff', 'hunspellchecker', 'hunspell', 'utils', 'aws'],
-        skipIfMatch: [
-          'http://[^s]*',
-          '^[-\\w]+/[-\\w\\.]+$', // For MIME Types
-        ],
-        skipWordIfMatch: [
-          '^foobar.*$', // words that begin with foobar will not be checked
-        ],
-        minLength: 3,
-      },
-    ],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'no-console': ['warn', { allow: ['warn', 'error'] }], // console.log시 warning, console.warn, error는 허용
   },
 };
