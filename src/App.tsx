@@ -3,9 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const hi = 'huhiu';
-  console.log('hihi');
-  const war = () => 'ggasdf';
   return (
     <div className='App'>
       <header className='App-header'>
