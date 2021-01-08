@@ -50,6 +50,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     // configure
     'prettier/prettier': 0,
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }], // console.log시 warning, console.warn, error는 허용
   },
