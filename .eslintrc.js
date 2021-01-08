@@ -52,5 +52,23 @@ module.exports = {
     'prettier/prettier': 0,
     '@typescript-eslint/no-unused-vars': 'error', // 사용안하는 변수
     'no-console': ['error', { allow: ['warn', 'error'] }], // 노콘솔, console.warn, error는 허용
+    'spellcheck/spell-checker': [
+      1,
+      {
+        comments: false,
+        strings: true,
+        identifiers: false,
+        lang: 'en_US',
+        skipWords: ['dict', 'aff', 'hunspellchecker', 'hunspell', 'utils', 'aws'],
+        skipIfMatch: [
+          'http://[^s]*',
+          '^[-\\w]+/[-\\w\\.]+$', // For MIME Types
+        ],
+        skipWordIfMatch: [
+          '^foobar.*$', // words that begin with foobar will not be checked
+        ],
+        minLength: 3,
+      },
+    ],
   },
 };
