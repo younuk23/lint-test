@@ -52,7 +52,7 @@ module.exports = {
     'prettier/prettier': 0,
     '@typescript-eslint/no-unused-vars': 'error', // 사용안하는 변수
     'no-console': ['error', { allow: ['warn', 'error'] }], // 노콘솔, console.warn, error는 허용
-    'spellcheck/spell-checker': [
+    'spell-checker': [
       1,
       {
         comments: false,
