@@ -1,3 +1,5 @@
+/* eslint-disable no-warning-comments */
+
 module.exports = {
   root: true,
   extends: [
@@ -52,7 +54,7 @@ module.exports = {
     'prettier/prettier': 0,
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'no-console': ['warn', { allow: ['warn', 'error'] }], // console.log시 warning, console.warn, error는 허용
-    'no-warning-comments': 'error',
+    'no-warning-comments': ['warn', { terms: [''], location: 'anywhere' }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
   },
 };
