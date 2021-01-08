@@ -11,6 +11,7 @@ module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   env: {
     browser: true,
+    node:true,
     es6: true,
     jest: true,
   },
@@ -49,6 +50,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     // configure
     'prettier/prettier': 0,
-    "@typescript-eslint/explicit-module-boundary-types":"off"
+    "@typescript-eslint/explicit-module-boundary-types":"off",
+    '@typescript-eslint/no-unused-vars':"error"
   },
 };
